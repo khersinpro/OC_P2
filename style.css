@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -10,6 +12,10 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+/***--------------------------------------------------------------------------------------***/
+/*********************************** HEADER + LOGO 9+ NAV ***********************************/
+/***--------------------------------------------------------------------------------------***/
+
 header{
     height: 170px;
     width: 100%;
@@ -17,4 +23,37 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header-logo{
+    height: 70px;
+    width: 145px;
+}
+nav{
+    height: 100%;
+    display: flex;
+}
+.nav-container{
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.active::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0065FC;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    color: #0065FC;
+    font-weight: 500;
+    font-size: 17px;
 }
