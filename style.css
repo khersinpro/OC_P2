@@ -200,7 +200,7 @@ h1{
 }
 .box-container{
     width: 100%;
-    height: auto;
+    height: calc(100% - 91px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -209,13 +209,16 @@ h1{
 }
 .box{
     width: 30%;
-    height: 215px;
+    height: calc(50% - 20px);
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.10), -4px -8px 10px rgba(0, 0, 0, 0.10);
     padding: 5px;
     color: #000;
     transition: ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .box:hover{
     transform: translateY(-10px);
@@ -230,10 +233,10 @@ h1{
     margin: 5px 0 5px 10px;
 }
 .box p{
-    margin: 5px 0 5px 10px;
+    margin:  auto 0 auto 10px;
 }
 .star-container{
-    margin-left: 10px;
+    margin: 0 0 10px 10px;
 }
 .display-more{
     width: 100%;
@@ -290,15 +293,17 @@ h1{
 .txt-boxRight{
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .txt-boxRight h3{
     margin: 10px 0 0 15px;
 }
 .txt-boxRight p{
-    margin: 10px 0 30px 15px;
+    margin: 10px 0 auto 15px;
 }
 .txt-boxRight .star-container{
-    margin: 0 0 0 15px;
+    margin: 0 0 10px 15px;
 }
 
 /***--------------------------------------------------------------------------------------***/
@@ -362,22 +367,123 @@ footer{
     background-color: #F2F2F2;
     padding: 0 5%;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
 }
 .footer-boxs{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 50px 80px 0 0;
 }
 .footer-boxs h4{
     margin: 0 0 10px;
-    font-size: 17px;
+    font-size: 18px;
 }
 .footer-boxs a{
     margin: 8px 0;
+    color: #000;
 }
 
+/***--------------------------------------------------------------------------------------***/
+/*************************************** MEDIA QUERIES **************************************/
+/***--------------------------------------------------------------------------------------***/
+
+@media(max-width: 1475px) {
+/***--------------------------------------------------------------------------------------***/
+/*********************************** HEADER + LOGO 9+ NAV ***********************************/
+/***--------------------------------------------------------------------------------------***/
+    header{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+/***--------------------------------------------------------------------------------------***/
+/*********************************** MAIN + FORM CONTAINER **********************************/
+/***--------------------------------------------------------------------------------------***/
+    main{
+        width: 100%;
+        padding: 0 2%;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .after-title{
+        font-size: 17px;
+    }
+    /* form and seach input */
+    .sub-icon{
+        height: 45px;
+    }
+    .search-container input{
+        height: 45px;
+    }
+    .search-container input:nth-child(2){
+        font-size: 16px;
+    }
+    .search-container input:nth-child(3){
+        font-size: 16px;
+    }
+    /* filter */
+    .filter-container p{
+        font-size: 17px;
+    }
+    .filter-container button{
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .info-container p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+/***--------------------------------------------------------------------------------------***/
+/************************************ SECTION HEBERGEMENT ***********************************/
+/***--------------------------------------------------------------------------------------***/
+    /* hebergement left box */
+    .hebergement-left{
+        padding: 40px 30px;
+    }
+    .hebergement-left h2{
+        font-size: 20px;
+    }
+    .box{
+        width: 32%;
+    }
+    .box h3{
+        margin: 10px 0 5px 10px;
+        font-size: 14px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+    .display-more a{
+        font-size: 17px;
+    }
+
+    /* herbergement right box */
+    .hebergement-right{
+        width: 32.5%;
+        padding: 40px 30px;   
+    }
+    .right-title h2{
+        font-size: 20px;
+    }
+    .txt-boxRight h3{
+        font-size: 14px;
+    }
+    .txt-boxRight p{
+        font-size: 13px;
+    }
+
+/***--------------------------------------------------------------------------------------***/
+/************************************* SECTION ACTIVITÉS ************************************/
+/***--------------------------------------------------------------------------------------***/
+    section:nth-child(3) h2{
+        font-size: 20px;
+    }
+    .activity-box h3{
+        font-size: 15px;
+    }
+}
 
 
 
