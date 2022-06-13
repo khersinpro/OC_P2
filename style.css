@@ -352,9 +352,31 @@ h1{
     height: 40%;
 }
 
+/***--------------------------------------------------------------------------------------***/
+/****************************************** FOOTER ******************************************/
+/***--------------------------------------------------------------------------------------***/
 
-
-
+footer{
+    height: 250px;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-boxs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.footer-boxs h4{
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+.footer-boxs a{
+    margin: 8px 0;
+}
 
 
 
