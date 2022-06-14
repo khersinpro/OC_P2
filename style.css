@@ -106,18 +106,30 @@ h1{
     font-weight: 600;
     border: 2px solid #F2F2F2;
 }
-.search-container input:nth-child(3){
+.search-container input:nth-child(4){
+    display: none;
+}
+.search-container label{
     border-radius: 0 10px 10px 0;
     background: #0065FC;
     width: 130px;
+    height: 46px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container label:hover{
+    cursor: pointer;
+    background: #0065fcea;
+}
+.search-container label span{
     font-weight: 600;
     font-size: 18px;
     color: #FFFFFF;
 }
-.search-container input:nth-child(3):hover{
-    cursor: pointer;
-    background: #0065fcea;
+.search-container label i{
+    display: none;
 }
 .filter-container{
     display: flex;
@@ -419,7 +431,7 @@ footer{
     .search-container input:nth-child(2){
         font-size: 16px;
     }
-    .search-container input:nth-child(3){
+    .search-container label{
         font-size: 16px;
     }
     /* filter */
@@ -605,12 +617,72 @@ footer{
     .nav-link{
         transform: translateY(0px);
     }
-    /* form section */
-    .form-section{
-        
-    }
+
+/***--------------------------------------------------------------------------------------***/
+/*********************************** MAIN + FORM CONTAINER **********************************/
+/***--------------------------------------------------------------------------------------***/
     main{
         padding: 0;
+    }
+    /* form section */
+    .form-section{
+        padding: 0 5%;
+    }
+    h1{
+        font-size: 22px; 
+        margin: 10px 0;
+    }
+    .after-title{
+         font-size: 16px; 
+         margin-bottom: 30px;
+    }
+
+    /* form and seach input */
+    .search-container{
+        position: relative;
+    }
+    .sub-icon{
+        font-size: 13px;
+        width: 40px;
+    }
+    .search-container input:nth-child(2){
+        width: calc(100% - 50px);
+        padding: 0 50px 0 10px;
+    }
+    .search-container label{
+        width: 55px;
+        height: 45px;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+    }
+    .search-container label span{
+        display:none;
+    }
+    .search-container label i{
+        display: block;
+        color: white;
+        font-size: 13px;
+    }
+
+    /* filters */
+    .filter-container{
+        justify-content: space-between;
+        min-width: 292px;
+        max-width: 338px;
+
+    }
+    .filter-container button{
+        margin: 0 0 20px 0;
+        padding: 0 15px 0 55px ;
+        font-size: 13px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        min-width: 45%;
+    }
+    .filter-container i{
+        font-size: 17px;
     }
     
 /***--------------------------------------------------------------------------------------***/
