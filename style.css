@@ -664,7 +664,14 @@ footer{
         color: white;
         font-size: 13px;
     }
-
+    .info-container{
+        align-items: flex-start;
+    }
+    .info-container i{
+        font-size: 12px;
+        height: 22px;
+        width: 24px;
+    }
     /* filters */
     .filter-container{
         justify-content: space-between;
