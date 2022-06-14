@@ -691,48 +691,51 @@ footer{
     .hebergement{
         flex-direction: column-reverse;
         height: auto;
+        margin-bottom: 25px;
     }
     /* hebergement right box*/
     .hebergement-right{
-        /* width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 0 20px 0; */
         border-radius: 0;
         padding: 40px 5%;
+        height: 100%;
+    }
+    .hebergement-right h2{
+        font-size: 26px;
     }
     .box-right{
         width: 100%;
-        margin: 0;
+        margin: 15px 0;
+        height: 200px;
     }
-    /* .txt-boxRight{
-        text-align: center;
-    } */
+    .txt-boxRight{
+        text-align: start;
+    }
     .right-title{
         width: 100%;
-    }
-    /* .right-title h2{
-        font-size: 20px;
+        margin-bottom: 15px;
     }
     .txt-boxRight h3{
-        font-size: 17px;
+        font-size: 20px;
     }
     .txt-boxRight p{
-        font-size: 15px;
-    } */
+        font-size: 17px;
+    }
+
     /* hebergement left box */
     .hebergement-left{
-        padding: 40px 5%;
+        padding: 20px 5%;
         height: 100%;
         background: #FFFFFF;
     }
     .hebergement-left h2{
-        font-size: 20px;
+        font-size: 26px;
     }
     .box{
         width: 100%;
+        height: 250px; 
+    }
+    .box img{
+        height: 160px;
     }
     .box h3{
         margin: 10px 0 5px 10px;
@@ -749,6 +752,7 @@ footer{
 /***--------------------------------------------------------------------------------------***/
     section:nth-child(3) h2{
         padding: 0 5%;
+        font-size: 26px;
     }
     .activity-container{
         flex-direction: column;
@@ -758,7 +762,7 @@ footer{
         
     }
     .activity-box{
-        width: 100%;     
+        width: 100%;    
     }
     .activity-box:nth-child(1), .activity-box:nth-child(3){
         height: 250px;
@@ -767,6 +771,7 @@ footer{
 
     .activity-box h3{
         margin: 15px 0 15px 20px;
+        font-size: 18px;
     }
     .activity-littleBox{
         margin-bottom: 25px;
