@@ -506,7 +506,7 @@ footer{
     .filter-container button{
         margin-bottom: 20px;
     }
-    
+
 /***--------------------------------------------------------------------------------------***/
 /************************************ SECTION HEBERGEMENT ***********************************/
 /***--------------------------------------------------------------------------------------***/    
@@ -566,7 +566,166 @@ footer{
 /************************************ MEDIA QUERIES PHONE  **********************************/
 /***--------------------------------------------------------------------------------------***/
 @media (max-width: 768px) {
+
+/***--------------------------------------------------------------------------------------***/
+/*********************************** HEADER + LOGO 9+ NAV ***********************************/
+/***--------------------------------------------------------------------------------------***/
+    header{
+        height: auto;
+        width: 100%;
+        padding: 0 ;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .header-logo{
+        height: 50px;
+        width: 100px;
+        margin: 30px 0 10px;
+    }
+    nav{
+        height: 60px;
+        width: 100%;
+    }
+    .nav-container{
+        width: 50%;
+        height: 100%;
+    }
+    .active::before{
+        display: none;
+    }
+    .active::after{
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #0065FC;
+    }
+    .nav-link{
+        transform: translateY(0px);
+    }
+    /* form section */
+    .form-section{
+        
+    }
+    main{
+        padding: 0;
+    }
     
+/***--------------------------------------------------------------------------------------***/
+/************************************ SECTION HEBERGEMENT ***********************************/
+/***--------------------------------------------------------------------------------------***/    
+    .hebergement{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    /* hebergement right box*/
+    .hebergement-right{
+        /* width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 20px 0; */
+        border-radius: 0;
+        padding: 40px 5%;
+    }
+    .box-right{
+        width: 100%;
+        margin: 0;
+    }
+    /* .txt-boxRight{
+        text-align: center;
+    } */
+    .right-title{
+        width: 100%;
+    }
+    /* .right-title h2{
+        font-size: 20px;
+    }
+    .txt-boxRight h3{
+        font-size: 17px;
+    }
+    .txt-boxRight p{
+        font-size: 15px;
+    } */
+    /* hebergement left box */
+    .hebergement-left{
+        padding: 40px 5%;
+        height: 100%;
+        background: #FFFFFF;
+    }
+    .hebergement-left h2{
+        font-size: 20px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box h3{
+        margin: 10px 0 5px 10px;
+        font-size: 17px;
+    }
+    .box p{
+        font-size: 15px;
+    }
+    .display-more a{
+        font-size: 17px;
+    }
+/***--------------------------------------------------------------------------------------***/
+/************************************* SECTION ACTIVITÉS ************************************/
+/***--------------------------------------------------------------------------------------***/
+    section:nth-child(3) h2{
+        padding: 0 5%;
+    }
+    .activity-container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0 5%;
+        
+    }
+    .activity-box{
+        width: 100%;     
+    }
+    .activity-box:nth-child(1), .activity-box:nth-child(3){
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .activity-box h3{
+        margin: 15px 0 15px 20px;
+    }
+    .activity-littleBox{
+        margin-bottom: 25px;
+    }
+    .activity-box:nth-child(2) .activity-littleBox:nth-child(1), .activity-littleBox:nth-child(2){
+        height: 250px;
+    }
+    .activity-box:nth-child(4) .activity-littleBox:nth-child(1), .activity-littleBox:nth-child(2){
+        height: 250px;
+    }
+
+
+/***--------------------------------------------------------------------------------------***/
+/****************************************** FOOTER ******************************************/
+/***--------------------------------------------------------------------------------------***/
+    footer{
+        height: 100%;
+        padding: 35px 5% 0;
+        flex-direction: column;
+    }
+    .footer-boxs{
+        margin: 0 0 45px 0;
+    }
+    .footer-boxs h4{
+        margin: 0 0 8px;
+        font-size: 16px;
+    }
+    .footer-boxs a{
+        margin: 5px 0;
+        font-size: 14px;
+    }
 }
 
 
