@@ -335,6 +335,7 @@ h1{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    color: #000;
 }
 .activity-box:nth-child(1), .activity-box:nth-child(3){
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.10), -4px -8px 10px rgba(0, 0, 0, 0.10);
@@ -352,6 +353,7 @@ h1{
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.10), -4px -8px 10px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
     width: 100%;
+    color: #000;
 }
 .activity-box:nth-child(2) .activity-littleBox:nth-child(1){
     height: 55%;
